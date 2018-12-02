@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Emotica</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 27px;
+            width: 829px;
+        }
+        .style3
+        {
+            width: 829px;
+        }
+        .style4
+        {
+            height: 67px;
+            width: 829px;
+        }
+        .style5
+        {
+            width: 829px;
+            height: 162px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+    <table class="style1">
+        <tr>
+            <td class="style2">
+    <div id="header">
+	<div id="logo">
+		<center><h1><a href="#">EMOTICA</a></h1></center>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="active"><a href="Home.aspx" title="">HOMEPAGE</a></li>
+			<li><a href="#" title="">ABOUT US</a></li>
+			<li><a href="#" title="">FEEDBACK</a></li>
+            <li><a href="Update.aspx" title="">UPDATE ACCOUNT</a></li>
+		</ul>
+	</div>
+</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style5">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+             <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        </asp:ContentPlaceHolder>
+   
+            </td>
+        </tr>
+       
+        
+    </table>
+    <div id="footer">
+	                        Footer info !
+	            </div>
+    </form>
+</body>
+</html>
